@@ -1,0 +1,10 @@
+/* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */
+@import "../../node_modules/compass-mixins/lib/compass";
+@import "../../node_modules/compass-mixins/lib/compass/css3/_transition.scss";
+
+/* CUSTOM IMPORTS */
+@import './components/NavBar.scss';
+
+body {
+	height: 2000px;
+}
