@@ -17,12 +17,15 @@ export default class NavBar extends React.Component {
 	}
 
 	render() {
-		const className = 'nav-bar' + (this.state.highlight ? ' highlight' : '');
+		const className = 'nav-bar-wrapper' + (this.state.highlight ? ' highlight' : '');
 
 		return (
-			<nav className={className}>
-				<a href="/">BallerNYC</a>				
-			</nav>
+			<div className={className}>
+				<nav>
+					<a href="/">BallerNYC</a>				
+				</nav>
+				<div/>
+			</div>
 		);
 	}
 }

@@ -3,7 +3,11 @@
 @import "../../node_modules/compass-mixins/lib/compass/css3/_transition.scss";
 
 /* CUSTOM IMPORTS */
+@import './views/Home.scss';
 @import './components/NavBar.scss';
+@import './components/Loader.scss';
+@import './components/BoroughButton.scss';
+@import './components/Court.scss';
 
 body {
 	height: 2000px;

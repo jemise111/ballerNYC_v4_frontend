@@ -19,7 +19,7 @@ const CourtStaticImage = React.createClass({
 
   buildImageSrc() {
     const qs = this.buildQueryString();
-    return config.map.baseUrl + '?' + qs
+    return config.map.baseUrl + '?' + qs;
   },
 
   buildQueryString() {

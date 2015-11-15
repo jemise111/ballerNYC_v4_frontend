@@ -1,6 +1,6 @@
 'use strict';
 
-import Settings from '../Config/Settings';
+import config from '../utils/config';
 
 function formatQuery (obj) {
   return Object.keys(obj)
@@ -45,12 +45,12 @@ function parseJSON (response) {
   return response.json();
 }
 
-export default class BaseApi {
+export default class BaseAPI {
 
   static fetch ({url, query, method, headers, body}) {
     var qs = formatQuery(generateQuery(query));
     var data = generateData(method, headers, this.auth, body);
-    url = `${url}?${qs}`;
+    url = `${config.api.baseUrl}${url}?${qs}`;
     return fetch(url, data)
       .then(checkStatus)
       .then(parseJSON)

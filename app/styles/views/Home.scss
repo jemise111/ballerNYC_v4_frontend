@@ -1,0 +1,19 @@
+.home-container {
+
+	.borough-container {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 50px 0;
+	}
+
+	.courts-container {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 50px 0;
+	}
+
+}
