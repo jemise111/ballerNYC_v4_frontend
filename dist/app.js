@@ -25342,8 +25342,8 @@
 	    }
 	  },
 	  api: {
-	    baseUrl: 'http://localhost:8080'
-	    // baseUrl: '/api'
+	    // baseUrl: 'http://localhost:8080'
+	    baseUrl: '/api'
 	  },
 	  courts: {
 	    boroughs: ['Manhattan', 'Brooklyn', 'Bronx', 'Queens', 'Staten Island'],
