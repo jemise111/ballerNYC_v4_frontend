@@ -1,26 +1,47 @@
 .court-container {
 
-	height: 200px;
-	margin-top: 10px;
-	position: relative;
-	width: 300px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	color: $primary-text-color;
+	font-family: $font-family-primary;
+	margin: 20px 0px;
 
-	img {
+	.image-container {
+		height: 200px;
+		width: 300px;
 
+		img {
+			display: block;
+		}
 	}
 
 	.content-container {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		padding-top: 100px;
+		height: 80px;
+		position: relative;
+		width: 300px;
 
 		h2 {
-			color: white;
-			font-size: 24px;
-			text-align: center;
+			font-size: 16px;
+			margin: 10px 0px 10px 10px;
+		}
+
+		h3 {
+			font-size: 12px;
+			margin: 0px 0px 10px 10px;
+		}
+
+		a {
+			color: $link-color;
+			cursor: pointer;
+			font-size: 14px;
+			margin: 0px 0px 10px 10px;
+		}
+
+		.favorite {
+			bottom: 10px;
+			color: #dd2e44;
+			cursor: pointer ;
+			position: absolute;
+			right: 10px;
 		}
 	}
 }

@@ -8,6 +8,9 @@ import BoroughButton from '../components/BoroughButton';
 import CourtsApi from '../apis/CourtsApi';
 import config from '../utils/config';
 
+var HIGHLIGHT_HEIGHT = 75;
+var COURTS_PER_PAGE = 20;
+
 export default class Home extends React.Component {
 
 	constructor(props) {
@@ -16,13 +19,19 @@ export default class Home extends React.Component {
 			borough: 'Manhattan',
 			page: 1,
 			courts: [],
-			loading: true
+			loading: true,
+			highlightNav: false,
+			hasMoreCourtsInBorough: true
 		};
 	}
 
 	componentWillMount() {
+		window.addEventListener('scroll', onScroll.bind(this));
 		fetchCourts.call(this, this.state);
-		var self = this;
+	}
+
+	componentWillUnmount() {
+		window.addEventListener('scroll', onScroll);
 	}
 
 	componentWillUpdate(nextProps, nextState) {
@@ -49,7 +58,9 @@ export default class Home extends React.Component {
 			this.setState({
 				borough: name,
 				courts: [],
-				loading: true
+				loading: true,
+				page: 1,
+				hasMoreCourtsInBorough: true
 			});
 		}
 	}
@@ -57,7 +68,7 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className="home-container">
-				<NavBar highlightHeight={35}/>
+				<NavBar highlight={this.state.highlightNav} borough={this.state.borough} />
 				<div className="borough-container">
 					{config.courts.boroughs.map(this.getBorough.bind(this))}
 				</div>
@@ -71,13 +82,36 @@ export default class Home extends React.Component {
 
 }
 
+/* 
+ * Helpers
+ */
+
 function fetchCourts(state) {
 	CourtsApi.getCourts(state.borough, state.page)
 	.then((data) => {
 		this.setState({
 			courts: this.state.courts.concat(data),
-			loading: false
+			loading: false,
+			hasMoreCourtsInBorough: data.length === COURTS_PER_PAGE
 		});
 	})
 	.catch((err) => {console.log(err)})
 }
+
+function onScroll() {
+	// this code isn't DRY but prevents react DOM diffing unnecessarily
+	if (window.scrollY > HIGHLIGHT_HEIGHT) {
+		this.setState({highlightNav: true});
+	} else {
+		this.setState({highlightNav: false});
+	}
+
+	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+		if (!this.state.loading && this.state.hasMoreCourtsInBorough) {
+			this.setState({
+				page: this.state.page + 1,
+				loading: true
+			})
+		}
+	}
+} 

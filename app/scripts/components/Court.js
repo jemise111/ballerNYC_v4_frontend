@@ -17,9 +17,14 @@ export default class Court extends React.Component {
 	render() {
 		return (
 			<div className="court-container">
-				<img src={this.buildImageSrc()} />
+				<div className="image-container">
+					<img src={this.buildImageSrc()} />
+				</div>
 				<div className="content-container">
 					<h2>{this.props.data.name}</h2>
+					<h3>{this.props.data.location}</h3>
+					<a>View Map</a>
+					<i className="material-icons favorite">favorite_border</i>
 				</div>
 			</div>
 		);

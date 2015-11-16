@@ -3,9 +3,10 @@
 		@include transition(all .3s);
 		
 		background-color: #fff;
-		border-bottom: 1px solid #999;
+		font-family: $font-family-primary;
 		height: 60px;
 		margin-bottom: 60px;
+		overflow: hidden;
 		position: fixed;
 		width: 100%;
 		z-index: 1;
@@ -13,12 +14,22 @@
 		a {
 			@include transition(all .3s);
 
-			color: #999;
+			color: $primary-color-dark;
 			font: 24px Helvetica;
 			display: inline-block;
 			margin-left: 30px;
 			margin-top: 15px;
 			text-decoration: none;
+		}
+
+		span {
+			@include transition(top .15s ease-out .3s);
+
+			color: #fff;
+			font-size: 12px;
+			position: relative;
+			top: 32px;
+			left: 10px;
 		}
 	}
 
@@ -29,14 +40,20 @@
 
 	&.highlight {
 		nav {
-			background-color: #999;
+			background-color: $primary-color-dark;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+			border: none;
 			height: 50px;
 		}
 
 		a {
-			color: #fff;
+			color: $primary-color-text;
 			margin-left: 15px;
 			margin-top: 10px;
+		}
+
+		span {
+			top: 0px;
 		}
 
 		div {
