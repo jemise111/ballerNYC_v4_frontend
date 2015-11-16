@@ -120,7 +120,7 @@
 
 
 	// module
-	exports.push([module.id, "/* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */\n/* CUSTOM IMPORTS */\n.home-container .borough-container {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  margin: 50px 0; }\n\n.home-container .courts-container {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  margin: 50px 0; }\n\n.nav-bar-wrapper nav {\n  -webkit-transition: all 0.3s false;\n  -moz-transition: all 0.3s false false;\n  -o-transition: all 0.3s false false;\n  transition: all 0.3s;\n  background-color: #fff;\n  border-bottom: 1px solid #999;\n  height: 60px;\n  margin-bottom: 60px;\n  position: fixed;\n  width: 100%;\n  z-index: 1; }\n  .nav-bar-wrapper nav a {\n    -webkit-transition: all 0.3s false;\n    -moz-transition: all 0.3s false false;\n    -o-transition: all 0.3s false false;\n    transition: all 0.3s;\n    color: #999;\n    font: 24px Helvetica;\n    display: inline-block;\n    margin-left: 30px;\n    margin-top: 15px;\n    text-decoration: none; }\n\n.nav-bar-wrapper div {\n  -webkit-transition: all 0.3s false;\n  -moz-transition: all 0.3s false false;\n  -o-transition: all 0.3s false false;\n  transition: all 0.3s;\n  height: 60px; }\n\n.nav-bar-wrapper.highlight nav {\n  background-color: #999;\n  height: 50px; }\n\n.nav-bar-wrapper.highlight a {\n  color: #fff;\n  margin-left: 15px;\n  margin-top: 10px; }\n\n.nav-bar-wrapper.highlight div {\n  height: 50px; }\n\n.loader.hide {\n  display: none; }\n\n.loader .spinner {\n  margin: 10px auto 10px auto;\n  width: 70px;\n  text-align: center; }\n\n.loader .spinner > div {\n  width: 18px;\n  height: 18px;\n  background-color: #333;\n  border-radius: 100%;\n  display: inline-block;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n\n.loader .spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n.loader .spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n\n.borough-button {\n  border-radius: 5px;\n  border: 1px solid black;\n  cursor: pointer;\n  margin: 5px;\n  padding: 10px 0;\n  text-align: center;\n  width: 110px; }\n  .borough-button.highlight {\n    background: black;\n    color: white; }\n\n.court-container {\n  height: 200px;\n  margin-top: 10px;\n  position: relative;\n  width: 300px; }\n  .court-container .content-container {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    top: 0;\n    padding-top: 100px; }\n    .court-container .content-container h2 {\n      color: white;\n      font-size: 24px;\n      text-align: center; }\n\nbody {\n  height: 2000px; }\n", "", {"version":3,"sources":["/./app/styles/main.scss","/./app/styles/views/Home.scss","/./app/styles/components/NavBar.scss","/./node_modules/compass-mixins/lib/compass/css3/_transition.scss","/./app/styles/components/Loader.scss","/./app/styles/components/BoroughButton.scss","/./app/styles/components/Court.scss"],"names":[],"mappings":"AAAA,4FAA4F;AAI5F,oBAAoB;ACJpB;EAGE,oBAAoB;EACpB,cAAc;EACd,gBAAgB;EAChB,wBAAwB;EACxB,eAAe,EACf;;AARF;EAWE,oBAAoB;EACpB,cAAc;EACd,gBAAgB;EAChB,8BAA8B;EAC9B,eAAe,EACf;;AChBF;ECuLkD,mCAjBvB;EAoB0B,sCAnBpC;EAoBsC,oCApBtC;EAqByC,qBD1L7B;EAE3B,uBAAuB;EACvB,8BAA8B;EAC9B,aAAa;EACb,oBAAoB;EACpB,gBAAgB;EAChB,YAAY;EACZ,WAAW,EAYX;EAtBF;ICuLkD,mCAjBvB;IAoB0B,sCAnBpC;IAoBsC,oCApBtC;IAqByC,qBD/K5B;IAE3B,YAAY;IACZ,qBAAqB;IACrB,sBAAsB;IACtB,kBAAkB;IAClB,iBAAiB;IACjB,sBAAsB,EACtB;;AArBH;ECuLkD,mCAjBvB;EAoB0B,sCAnBpC;EAoBsC,oCApBtC;EAqByC,qBDnK7B;EAC3B,aAAa,EACb;;AA3BF;EA+BG,uBAAuB;EACvB,aAAa,EACb;;AAjCH;EAoCG,YAAY;EACZ,kBAAkB;EAClB,iBAAiB,EACjB;;AAvCH;EA0CG,aAAa,EACb;;AEzCH;EAGI,cAAc,EACf;;AAJH;EAOI,4BAA4B;EAC5B,YAAY;EACZ,mBAAmB,EACpB;;AAVH;EAaI,YAAY;EACZ,aAAa;EACb,uBAAuB;EAEvB,oBAAoB;EACpB,sBAAsB;EACtB,iEAAiE;EACjE,yDAAyD,EAC1D;;AArBH;EAwBI,gCAAgC;EAChC,wBAAwB,EACzB;;AA1BH;EA6BI,gCAAgC;EAChC,wBAAwB,EACzB;;AAED;EACE;IAAgB,4BAAwB,EAAA;EACxC;IAAM,4BAAwB,EAAA,EAAA;;AAGhC;EACE;IACE,4BAAwB;IACxB,oBAAgB,EAAA;EAGlB;IACA,4BAAwB;IACtB,oBAAgB,EAAA,EAAA;;AChDtB;EACC,mBAAmB;EACnB,wBAAwB;EACxB,gBAAgB;EAChB,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa,EAMb;EAbD;IAUE,kBAAkB;IAClB,aAAa,EACb;;ACZF;EAEC,cAAc;EACd,iBAAiB;EACjB,mBAAmB;EACnB,aAAa,EAoBb;EAzBD;IAYE,mBAAmB;IACnB,UAAU;IACV,QAAQ;IACR,SAAS;IACT,OAAO;IACP,mBAAmB,EAOnB;IAxBF;MAoBG,aAAa;MACb,gBAAgB;MAChB,mBAAmB,EACnB;;ANZH;EACC,eAAe,EACf","file":"main.scss","sourcesContent":["/* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */\n@import \"../../node_modules/compass-mixins/lib/compass\";\n@import \"../../node_modules/compass-mixins/lib/compass/css3/_transition.scss\";\n\n/* CUSTOM IMPORTS */\n@import './views/Home.scss';\n@import './components/NavBar.scss';\n@import './components/Loader.scss';\n@import './components/BoroughButton.scss';\n@import './components/Court.scss';\n\nbody {\n\theight: 2000px;\n}",".home-container {\n\n\t.borough-container {\n\t\talign-items: center;\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: center;\n\t\tmargin: 50px 0;\n\t}\n\n\t.courts-container {\n\t\talign-items: center;\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: space-around;\n\t\tmargin: 50px 0;\n\t}\n\n}",".nav-bar-wrapper {\n\tnav {\n\t\t@include transition(all .3s);\n\t\t\n\t\tbackground-color: #fff;\n\t\tborder-bottom: 1px solid #999;\n\t\theight: 60px;\n\t\tmargin-bottom: 60px;\n\t\tposition: fixed;\n\t\twidth: 100%;\n\t\tz-index: 1;\n\n\t\ta {\n\t\t\t@include transition(all .3s);\n\n\t\t\tcolor: #999;\n\t\t\tfont: 24px Helvetica;\n\t\t\tdisplay: inline-block;\n\t\t\tmargin-left: 30px;\n\t\t\tmargin-top: 15px;\n\t\t\ttext-decoration: none;\n\t\t}\n\t}\n\n\tdiv {\n\t\t@include transition(all .3s);\n\t\theight: 60px;\n\t}\n\n\t&.highlight {\n\t\tnav {\n\t\t\tbackground-color: #999;\n\t\t\theight: 50px;\n\t\t}\n\n\t\ta {\n\t\t\tcolor: #fff;\n\t\t\tmargin-left: 15px;\n\t\t\tmargin-top: 10px;\n\t\t}\n\n\t\tdiv {\n\t\t\theight: 50px;\n\t\t}\n\t}\n}\n","@import \"shared\";\n\n// CSS Transitions\n// Currently only works in Webkit.\n//\n// * expected in CSS3, FireFox 3.6/7 and Opera Presto 2.3\n// * We'll be prepared.\n//\n// Including this submodule sets following defaults for the mixins:\n//\n//     $default-transition-property : all\n//     $default-transition-duration : 1s\n//     $default-transition-function : false\n//     $default-transition-delay    : false\n//\n// Override them if you like. Timing-function and delay are set to false for browser defaults (ease, 0s).\n\n$default-transition-property: all !default;\n\n$default-transition-duration: 1s !default;\n\n$default-transition-function: false !default;\n\n$default-transition-delay: false !default;\n\n$transitionable-prefixed-values: transform, transform-origin !default;\n\n// One or more properties to transition\n//\n// * for multiple, use a comma-delimited list\n// * also accepts \"all\" or \"none\"\n\n@mixin transition-property($property-1: $default-transition-property,\n  $property-2 : false,\n  $property-3 : false,\n  $property-4 : false,\n  $property-5 : false,\n  $property-6 : false,\n  $property-7 : false,\n  $property-8 : false,\n  $property-9 : false,\n  $property-10: false\n) {\n  @if type-of($property-1) == string { $property-1: unquote($property-1); }\n  $properties: compact($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10);\n  @if $experimental-support-for-webkit    {       -webkit-transition-property : prefixed-for-transition(-webkit, $properties); }\n  @if $experimental-support-for-mozilla   {          -moz-transition-property : prefixed-for-transition(-moz,    $properties); }\n  @if $experimental-support-for-opera     {            -o-transition-property : prefixed-for-transition(-o,      $properties); }\n                                                          transition-property : $properties;\n}\n\n// One or more durations in seconds\n//\n// * for multiple, use a comma-delimited list\n// * these durations will affect the properties in the same list position\n\n@mixin transition-duration($duration-1: $default-transition-duration,\n  $duration-2 : false,\n  $duration-3 : false,\n  $duration-4 : false,\n  $duration-5 : false,\n  $duration-6 : false,\n  $duration-7 : false,\n  $duration-8 : false,\n  $duration-9 : false,\n  $duration-10: false\n) {\n  @if type-of($duration-1) == string { $duration-1: unquote($duration-1); }\n  $durations: compact($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10);\n  @include experimental(transition-duration, $durations,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// One or more timing functions\n//\n// * [ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)]\n// * For multiple, use a comma-delimited list\n// * These functions will effect the properties in the same list position\n\n@mixin transition-timing-function($function-1: $default-transition-function,\n  $function-2 : false,\n  $function-3 : false,\n  $function-4 : false,\n  $function-5 : false,\n  $function-6 : false,\n  $function-7 : false,\n  $function-8 : false,\n  $function-9 : false,\n  $function-10: false\n) {\n  $function-1: unquote($function-1);\n  $functions: compact($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10);\n  @include experimental(transition-timing-function, $functions,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// One or more transition-delays in seconds\n//\n// * for multiple, use a comma-delimited list\n// * these delays will effect the properties in the same list position\n\n@mixin transition-delay($delay-1: $default-transition-delay,\n  $delay-2 : false,\n  $delay-3 : false,\n  $delay-4 : false,\n  $delay-5 : false,\n  $delay-6 : false,\n  $delay-7 : false,\n  $delay-8 : false,\n  $delay-9 : false,\n  $delay-10: false\n) {\n  @if type-of($delay-1) == string { $delay-1: unquote($delay-1); }\n  $delays: compact($delay-1, $delay-2, $delay-3, $delay-4, $delay-5, $delay-6, $delay-7, $delay-8, $delay-9, $delay-10);\n  @include experimental(transition-delay, $delays,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// Transition all-in-one shorthand\n\n@mixin single-transition(\n  $property: $default-transition-property,\n  $duration: $default-transition-duration,\n  $function: $default-transition-function,\n  $delay: $default-transition-delay\n) {\n  @include transition(compact($property $duration $function $delay));\n}\n\n@mixin transition(\n  $transition-1 : default,\n  $transition-2 : false,\n  $transition-3 : false,\n  $transition-4 : false,\n  $transition-5 : false,\n  $transition-6 : false,\n  $transition-7 : false,\n  $transition-8 : false,\n  $transition-9 : false,\n  $transition-10: false\n) {\n  @if $transition-1 == default {\n    $transition-1 : compact($default-transition-property $default-transition-duration $default-transition-function $default-transition-delay);\n  }\n  $transitions: false;\n  @if type-of($transition-1) == list and type-of(nth($transition-1,1)) == list {\n    $transitions: join($transition-1, compact($transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10), comma);\n  } @else {\n    $transitions : compact($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10);\n  }\n  $delays: comma-list();\n  $has-delays: false;\n  $webkit-value: comma-list();\n  $moz-value: comma-list();\n  $o-value: comma-list();\n\n  // This block can be made considerably simpler at the point in time that\n  // we no longer need to deal with the differences in how delays are treated.\n  @each $transition in $transitions {\n    // Extract the values from the list\n    // (this would be cleaner if nth took a 3rd argument to provide a default value).\n    $property: nth($transition, 1);\n    $duration: false;\n    $timing-function: false;\n    $delay: false;\n    @if length($transition) > 1 { $duration:        nth($transition, 2); }\n    @if length($transition) > 2 { $timing-function: nth($transition, 3); }\n    @if length($transition) > 3 { $delay:           nth($transition, 4); $has-delays: true; }\n\n    // If a delay is provided without a timing function\n    @if is-time($timing-function) and not($delay) { $delay: $timing-function; $timing-function: false; $has-delays: true; }\n\n    // Keep a list of delays in case one is specified\n    $delays: append($delays, if($delay, $delay, 0s));\n\n    $webkit-value: append($webkit-value, compact(prefixed-for-transition(-webkit, $property) $duration $timing-function));\n       $moz-value: append(   $moz-value, compact(prefixed-for-transition(   -moz, $property) $duration $timing-function $delay));\n         $o-value: append(     $o-value, compact(prefixed-for-transition(     -o, $property) $duration $timing-function $delay));\n  }\n\n  @if $experimental-support-for-webkit    {       -webkit-transition : $webkit-value;\n    // old webkit doesn't support the delay parameter in the shorthand so we progressively enhance it.\n    @if $has-delays                       { -webkit-transition-delay : $delays;       } }\n  @if $experimental-support-for-mozilla   {          -moz-transition : $moz-value;    }\n  @if $experimental-support-for-opera     {            -o-transition : $o-value;      }\n                                                          transition : $transitions;\n}\n\n// coerce a list to be comma delimited or make a new, empty comma delimited list.\n@function comma-list($list: ()) {\n  @return join((), $list, comma);\n}\n\n// Returns `$property` with the given prefix if it is found in `$transitionable-prefixed-values`.\n@function prefixed-for-transition($prefix, $property) {\n  @if type-of($property) == list {\n    $new-list: comma-list();\n    @each $v in $property {\n      $new-list: append($new-list, prefixed-for-transition($prefix, $v));\n    }\n    @return $new-list;\n  } @else {\n    @if index($transitionable-prefixed-values, $property) {\n      @return #{$prefix}-#{$property};\n    } @else {\n      @return $property;\n    }\n  }\n}\n\n// Checks if the value given is a unit of time.\n@function is-time($value) {\n  @if type-of($value) == number {\n    @return not(not(index(s ms, unit($value))));\n  } @else {\n    @return false;\n  }\n}\n","// Credit: http://tobiasahlin.com/spinkit/\n\n.loader {\n\n  &.hide {\n    display: none;\n  }\n\n  .spinner {\n    margin: 10px auto 10px auto;\n    width: 70px;\n    text-align: center;\n  }\n\n  .spinner > div {\n    width: 18px;\n    height: 18px;\n    background-color: #333;\n\n    border-radius: 100%;\n    display: inline-block;\n    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n    animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  }\n\n  .spinner .bounce1 {\n    -webkit-animation-delay: -0.32s;\n    animation-delay: -0.32s;\n  }\n\n  .spinner .bounce2 {\n    -webkit-animation-delay: -0.16s;\n    animation-delay: -0.16s;\n  }\n\n  @-webkit-keyframes sk-bouncedelay {\n    0%, 80%, 100% { -webkit-transform: scale(0) }\n    40% { -webkit-transform: scale(1.0) }\n  }\n\n  @keyframes sk-bouncedelay {\n    0%, 80%, 100% { \n      -webkit-transform: scale(0);\n      transform: scale(0);\n    }\n\n    40% { \n    -webkit-transform: scale(1.0);\n      transform: scale(1.0);\n    }\n  }\n}",".borough-button {\n\tborder-radius: 5px;\n\tborder: 1px solid black;\n\tcursor: pointer;\n\tmargin: 5px;\n\tpadding: 10px 0;\n\ttext-align: center;\n\twidth: 110px;\n\n\t&.highlight {\n\t\tbackground: black;\n\t\tcolor: white;\n\t}\n}",".court-container {\n\n\theight: 200px;\n\tmargin-top: 10px;\n\tposition: relative;\n\twidth: 300px;\n\n\timg {\n\n\t}\n\n\t.content-container {\n\t\tposition: absolute;\n\t\tbottom: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\ttop: 0;\n\t\tpadding-top: 100px;\n\n\t\th2 {\n\t\t\tcolor: white;\n\t\t\tfont-size: 24px;\n\t\t\ttext-align: center;\n\t\t}\n\t}\n}"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "/* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */\n/* CUSTOM IMPORTS */\n/* Palette generated by Material Palette - materialpalette.com/teal/blue-grey */\n.home-container .borough-container {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  margin: 50px 0; }\n\n.home-container .courts-container {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  margin: 50px 0; }\n\n.nav-bar-wrapper nav {\n  -webkit-transition: all 0.3s false;\n  -moz-transition: all 0.3s false false;\n  -o-transition: all 0.3s false false;\n  transition: all 0.3s;\n  background-color: #fff;\n  font-family: \"Roboto\", sans-serif;\n  height: 60px;\n  margin-bottom: 60px;\n  overflow: hidden;\n  position: fixed;\n  width: 100%;\n  z-index: 1; }\n  .nav-bar-wrapper nav a {\n    -webkit-transition: all 0.3s false;\n    -moz-transition: all 0.3s false false;\n    -o-transition: all 0.3s false false;\n    transition: all 0.3s;\n    color: #00796B;\n    font: 24px Helvetica;\n    display: inline-block;\n    margin-left: 30px;\n    margin-top: 15px;\n    text-decoration: none; }\n  .nav-bar-wrapper nav span {\n    -webkit-transition: top 0.15s ease-out;\n    -webkit-transition-delay: 0.3s;\n    -moz-transition: top 0.15s ease-out 0.3s;\n    -o-transition: top 0.15s ease-out 0.3s;\n    transition: top 0.15s ease-out 0.3s;\n    color: #fff;\n    font-size: 12px;\n    position: relative;\n    top: 32px;\n    left: 10px; }\n\n.nav-bar-wrapper div {\n  -webkit-transition: all 0.3s false;\n  -moz-transition: all 0.3s false false;\n  -o-transition: all 0.3s false false;\n  transition: all 0.3s;\n  height: 60px; }\n\n.nav-bar-wrapper.highlight nav {\n  background-color: #00796B;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);\n  border: none;\n  height: 50px; }\n\n.nav-bar-wrapper.highlight a {\n  color: #FFFFFF;\n  margin-left: 15px;\n  margin-top: 10px; }\n\n.nav-bar-wrapper.highlight span {\n  top: 0px; }\n\n.nav-bar-wrapper.highlight div {\n  height: 50px; }\n\n.loader.hide {\n  display: none; }\n\n.loader .spinner {\n  margin: 10px auto 10px auto;\n  width: 70px;\n  text-align: center; }\n\n.loader .spinner > div {\n  width: 18px;\n  height: 18px;\n  background-color: #333;\n  border-radius: 100%;\n  display: inline-block;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n\n.loader .spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n.loader .spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n\n.borough-button {\n  -webkit-transition: all 0.3s false;\n  -moz-transition: all 0.3s false false;\n  -o-transition: all 0.3s false false;\n  transition: all 0.3s;\n  background: #00796B;\n  color: #FFFFFF;\n  cursor: pointer;\n  font-family: \"Roboto\", sans-serif;\n  margin: 5px;\n  padding: 10px 0;\n  text-align: center;\n  width: 110px;\n  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }\n  .borough-button:hover, .borough-button.highlight {\n    background: #009688;\n    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }\n\n.court-container {\n  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);\n  color: #212121;\n  font-family: \"Roboto\", sans-serif;\n  margin: 20px 0px; }\n  .court-container .image-container {\n    height: 200px;\n    width: 300px; }\n    .court-container .image-container img {\n      display: block; }\n  .court-container .content-container {\n    height: 80px;\n    position: relative;\n    width: 300px; }\n    .court-container .content-container h2 {\n      font-size: 16px;\n      margin: 10px 0px 10px 10px; }\n    .court-container .content-container h3 {\n      font-size: 12px;\n      margin: 0px 0px 10px 10px; }\n    .court-container .content-container a {\n      color: #0CBAD4;\n      cursor: pointer;\n      font-size: 14px;\n      margin: 0px 0px 10px 10px; }\n    .court-container .content-container .favorite {\n      bottom: 10px;\n      color: #dd2e44;\n      cursor: pointer;\n      position: absolute;\n      right: 10px; }\n", "", {"version":3,"sources":["/./app/styles/main.scss","/./app/styles/base.scss","/./app/styles/views/Home.scss","/./app/styles/components/NavBar.scss","/./node_modules/compass-mixins/lib/compass/css3/_transition.scss","/./app/styles/components/Loader.scss","/./app/styles/components/BoroughButton.scss","/./app/styles/components/Court.scss"],"names":[],"mappings":"AAAA,4FAA4F;AAI5F,oBAAoB;ACJpB,gFAAgF;ACAhF;EAGE,oBAAoB;EACpB,cAAc;EACd,gBAAgB;EAChB,wBAAwB;EACxB,eAAe,EACf;;AARF;EAWE,oBAAoB;EACpB,cAAc;EACd,gBAAgB;EAChB,8BAA8B;EAC9B,eAAe,EACf;;AChBF;ECuLkD,mCAjBvB;EAoB0B,sCAnBpC;EAoBsC,oCApBtC;EAqByC,qBD1L7B;EAE3B,uBAAuB;EACvB,kCFMwC;EELxC,aAAa;EACb,oBAAoB;EACpB,iBAAiB;EACjB,gBAAgB;EAChB,YAAY;EACZ,WAAW,EAsBX;EAjCF;ICuLkD,mCAjBvB;IAoB0B,sCAnBpC;IAoBsC,oCApBtC;IAqByC,qBD9K5B;IAE3B,eFd2B;IEe3B,qBAAqB;IACrB,sBAAsB;IACtB,kBAAkB;IAClB,iBAAiB;IACjB,sBAAsB,EACtB;EAtBH;ICuLkD,uCD9JV;ICgKI,+BDhKA;ICiKS,yCDjKT;ICkKW,uCDlKX;ICmKc,oCDnKd;IAEzC,YAAY;IACZ,gBAAgB;IAChB,mBAAmB;IACnB,UAAU;IACV,WAAW,EACX;;AAhCH;ECuLkD,mCAjBvB;EAoB0B,sCAnBpC;EAoBsC,oCApBtC;EAqByC,qBDxJ7B;EAC3B,aAAa,EACb;;AAtCF;EA0CG,0BFxC2B;EEyC3B,0CAA0B;EAC1B,aAAa;EACb,aAAa,EACb;;AA9CH;EAiDG,eF5C2B;EE6C3B,kBAAkB;EAClB,iBAAiB,EACjB;;AApDH;EAuDG,SAAS,EACT;;AAxDH;EA2DG,aAAa,EACb;;AE1DH;EAGI,cAAc,EACf;;AAJH;EAOI,4BAA4B;EAC5B,YAAY;EACZ,mBAAmB,EACpB;;AAVH;EAaI,YAAY;EACZ,aAAa;EACb,uBAAuB;EAEvB,oBAAoB;EACpB,sBAAsB;EACtB,iEAAiE;EACjE,yDAAyD,EAC1D;;AArBH;EAwBI,gCAAgC;EAChC,wBAAwB,EACzB;;AA1BH;EA6BI,gCAAgC;EAChC,wBAAwB,EACzB;;AAED;EACE;IAAgB,4BAAwB,EAAA;EACxC;IAAM,4BAAwB,EAAA,EAAA;;AAGhC;EACE;IACE,4BAAwB;IACxB,oBAAgB,EAAA;EAGlB;IACA,4BAAwB;IACtB,oBAAgB,EAAA,EAAA;;AChDtB;EFuLkD,mCAjBvB;EAoB0B,sCAnBpC;EAoBsC,oCApBtC;EAqByC,qBE3L9B;EAE3B,oBLD6B;EKE7B,eLC6B;EKA7B,gBAAgB;EAChB,kCLKyC;EKJzC,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EAEb,8EAA8D,EAM9D;EAlBD;IAeE,oBLZ4B;IKazB,+EAA+D,EAClE;;ACjBF;EAEC,4EAA0D;EAC1D,eNI6B;EMH7B,kCNOyC;EMNzC,iBAAiB,EAyCjB;EA9CD;IAQE,cAAc;IACd,aAAa,EAKb;IAdF;MAYG,eAAe,EACf;EAbH;IAiBE,aAAa;IACb,mBAAmB;IACnB,aAAa,EA0Bb;IA7CF;MAsBG,gBAAgB;MAChB,2BAA2B,EAC3B;IAxBH;MA2BG,gBAAgB;MAChB,0BAA0B,EAC1B;IA7BH;MAgCG,eNtB2B;MMuB3B,gBAAgB;MAChB,gBAAgB;MAChB,0BAA0B,EAC1B;IApCH;MAuCG,aAAa;MACb,eAAe;MACf,gBAAiB;MACjB,mBAAmB;MACnB,YAAY,EACZ","file":"main.scss","sourcesContent":["/* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */\n@import \"../../node_modules/compass-mixins/lib/compass\";\n@import \"../../node_modules/compass-mixins/lib/compass/css3/_transition.scss\";\n\n/* CUSTOM IMPORTS */\n@import './base.scss';\n@import './views/Home.scss';\n@import './components/NavBar.scss';\n@import './components/Loader.scss';\n@import './components/BoroughButton.scss';\n@import './components/Court.scss';\n","/* Palette generated by Material Palette - materialpalette.com/teal/blue-grey */\n\n$primary-color-dark:   #00796B;\n$primary-color:        #009688;\n$primary-color-light:  #B2DFDB;\n$primary-color-text:   #FFFFFF;\n$accent-color:         #607D8B;\n$primary-text-color:   #212121;\n$secondary-text-color: #727272;\n$divider-color:        #B6B6B6;\n$link-color:           #0CBAD4;\n$font-family-primary: 'Roboto', sans-serif;",".home-container {\n\n\t.borough-container {\n\t\talign-items: center;\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: center;\n\t\tmargin: 50px 0;\n\t}\n\n\t.courts-container {\n\t\talign-items: center;\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tjustify-content: space-around;\n\t\tmargin: 50px 0;\n\t}\n\n}",".nav-bar-wrapper {\n\tnav {\n\t\t@include transition(all .3s);\n\t\t\n\t\tbackground-color: #fff;\n\t\tfont-family: $font-family-primary;\n\t\theight: 60px;\n\t\tmargin-bottom: 60px;\n\t\toverflow: hidden;\n\t\tposition: fixed;\n\t\twidth: 100%;\n\t\tz-index: 1;\n\n\t\ta {\n\t\t\t@include transition(all .3s);\n\n\t\t\tcolor: $primary-color-dark;\n\t\t\tfont: 24px Helvetica;\n\t\t\tdisplay: inline-block;\n\t\t\tmargin-left: 30px;\n\t\t\tmargin-top: 15px;\n\t\t\ttext-decoration: none;\n\t\t}\n\n\t\tspan {\n\t\t\t@include transition(top .15s ease-out .3s);\n\n\t\t\tcolor: #fff;\n\t\t\tfont-size: 12px;\n\t\t\tposition: relative;\n\t\t\ttop: 32px;\n\t\t\tleft: 10px;\n\t\t}\n\t}\n\n\tdiv {\n\t\t@include transition(all .3s);\n\t\theight: 60px;\n\t}\n\n\t&.highlight {\n\t\tnav {\n\t\t\tbackground-color: $primary-color-dark;\n\t\t\tbox-shadow: 0 2px 5px rgba(0,0,0,0.26);\n\t\t\tborder: none;\n\t\t\theight: 50px;\n\t\t}\n\n\t\ta {\n\t\t\tcolor: $primary-color-text;\n\t\t\tmargin-left: 15px;\n\t\t\tmargin-top: 10px;\n\t\t}\n\n\t\tspan {\n\t\t\ttop: 0px;\n\t\t}\n\n\t\tdiv {\n\t\t\theight: 50px;\n\t\t}\n\t}\n}\n","@import \"shared\";\n\n// CSS Transitions\n// Currently only works in Webkit.\n//\n// * expected in CSS3, FireFox 3.6/7 and Opera Presto 2.3\n// * We'll be prepared.\n//\n// Including this submodule sets following defaults for the mixins:\n//\n//     $default-transition-property : all\n//     $default-transition-duration : 1s\n//     $default-transition-function : false\n//     $default-transition-delay    : false\n//\n// Override them if you like. Timing-function and delay are set to false for browser defaults (ease, 0s).\n\n$default-transition-property: all !default;\n\n$default-transition-duration: 1s !default;\n\n$default-transition-function: false !default;\n\n$default-transition-delay: false !default;\n\n$transitionable-prefixed-values: transform, transform-origin !default;\n\n// One or more properties to transition\n//\n// * for multiple, use a comma-delimited list\n// * also accepts \"all\" or \"none\"\n\n@mixin transition-property($property-1: $default-transition-property,\n  $property-2 : false,\n  $property-3 : false,\n  $property-4 : false,\n  $property-5 : false,\n  $property-6 : false,\n  $property-7 : false,\n  $property-8 : false,\n  $property-9 : false,\n  $property-10: false\n) {\n  @if type-of($property-1) == string { $property-1: unquote($property-1); }\n  $properties: compact($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10);\n  @if $experimental-support-for-webkit    {       -webkit-transition-property : prefixed-for-transition(-webkit, $properties); }\n  @if $experimental-support-for-mozilla   {          -moz-transition-property : prefixed-for-transition(-moz,    $properties); }\n  @if $experimental-support-for-opera     {            -o-transition-property : prefixed-for-transition(-o,      $properties); }\n                                                          transition-property : $properties;\n}\n\n// One or more durations in seconds\n//\n// * for multiple, use a comma-delimited list\n// * these durations will affect the properties in the same list position\n\n@mixin transition-duration($duration-1: $default-transition-duration,\n  $duration-2 : false,\n  $duration-3 : false,\n  $duration-4 : false,\n  $duration-5 : false,\n  $duration-6 : false,\n  $duration-7 : false,\n  $duration-8 : false,\n  $duration-9 : false,\n  $duration-10: false\n) {\n  @if type-of($duration-1) == string { $duration-1: unquote($duration-1); }\n  $durations: compact($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10);\n  @include experimental(transition-duration, $durations,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// One or more timing functions\n//\n// * [ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)]\n// * For multiple, use a comma-delimited list\n// * These functions will effect the properties in the same list position\n\n@mixin transition-timing-function($function-1: $default-transition-function,\n  $function-2 : false,\n  $function-3 : false,\n  $function-4 : false,\n  $function-5 : false,\n  $function-6 : false,\n  $function-7 : false,\n  $function-8 : false,\n  $function-9 : false,\n  $function-10: false\n) {\n  $function-1: unquote($function-1);\n  $functions: compact($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10);\n  @include experimental(transition-timing-function, $functions,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// One or more transition-delays in seconds\n//\n// * for multiple, use a comma-delimited list\n// * these delays will effect the properties in the same list position\n\n@mixin transition-delay($delay-1: $default-transition-delay,\n  $delay-2 : false,\n  $delay-3 : false,\n  $delay-4 : false,\n  $delay-5 : false,\n  $delay-6 : false,\n  $delay-7 : false,\n  $delay-8 : false,\n  $delay-9 : false,\n  $delay-10: false\n) {\n  @if type-of($delay-1) == string { $delay-1: unquote($delay-1); }\n  $delays: compact($delay-1, $delay-2, $delay-3, $delay-4, $delay-5, $delay-6, $delay-7, $delay-8, $delay-9, $delay-10);\n  @include experimental(transition-delay, $delays,\n    -moz, -webkit, -o, not(-ms), not(-khtml), official\n  );\n}\n\n// Transition all-in-one shorthand\n\n@mixin single-transition(\n  $property: $default-transition-property,\n  $duration: $default-transition-duration,\n  $function: $default-transition-function,\n  $delay: $default-transition-delay\n) {\n  @include transition(compact($property $duration $function $delay));\n}\n\n@mixin transition(\n  $transition-1 : default,\n  $transition-2 : false,\n  $transition-3 : false,\n  $transition-4 : false,\n  $transition-5 : false,\n  $transition-6 : false,\n  $transition-7 : false,\n  $transition-8 : false,\n  $transition-9 : false,\n  $transition-10: false\n) {\n  @if $transition-1 == default {\n    $transition-1 : compact($default-transition-property $default-transition-duration $default-transition-function $default-transition-delay);\n  }\n  $transitions: false;\n  @if type-of($transition-1) == list and type-of(nth($transition-1,1)) == list {\n    $transitions: join($transition-1, compact($transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10), comma);\n  } @else {\n    $transitions : compact($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10);\n  }\n  $delays: comma-list();\n  $has-delays: false;\n  $webkit-value: comma-list();\n  $moz-value: comma-list();\n  $o-value: comma-list();\n\n  // This block can be made considerably simpler at the point in time that\n  // we no longer need to deal with the differences in how delays are treated.\n  @each $transition in $transitions {\n    // Extract the values from the list\n    // (this would be cleaner if nth took a 3rd argument to provide a default value).\n    $property: nth($transition, 1);\n    $duration: false;\n    $timing-function: false;\n    $delay: false;\n    @if length($transition) > 1 { $duration:        nth($transition, 2); }\n    @if length($transition) > 2 { $timing-function: nth($transition, 3); }\n    @if length($transition) > 3 { $delay:           nth($transition, 4); $has-delays: true; }\n\n    // If a delay is provided without a timing function\n    @if is-time($timing-function) and not($delay) { $delay: $timing-function; $timing-function: false; $has-delays: true; }\n\n    // Keep a list of delays in case one is specified\n    $delays: append($delays, if($delay, $delay, 0s));\n\n    $webkit-value: append($webkit-value, compact(prefixed-for-transition(-webkit, $property) $duration $timing-function));\n       $moz-value: append(   $moz-value, compact(prefixed-for-transition(   -moz, $property) $duration $timing-function $delay));\n         $o-value: append(     $o-value, compact(prefixed-for-transition(     -o, $property) $duration $timing-function $delay));\n  }\n\n  @if $experimental-support-for-webkit    {       -webkit-transition : $webkit-value;\n    // old webkit doesn't support the delay parameter in the shorthand so we progressively enhance it.\n    @if $has-delays                       { -webkit-transition-delay : $delays;       } }\n  @if $experimental-support-for-mozilla   {          -moz-transition : $moz-value;    }\n  @if $experimental-support-for-opera     {            -o-transition : $o-value;      }\n                                                          transition : $transitions;\n}\n\n// coerce a list to be comma delimited or make a new, empty comma delimited list.\n@function comma-list($list: ()) {\n  @return join((), $list, comma);\n}\n\n// Returns `$property` with the given prefix if it is found in `$transitionable-prefixed-values`.\n@function prefixed-for-transition($prefix, $property) {\n  @if type-of($property) == list {\n    $new-list: comma-list();\n    @each $v in $property {\n      $new-list: append($new-list, prefixed-for-transition($prefix, $v));\n    }\n    @return $new-list;\n  } @else {\n    @if index($transitionable-prefixed-values, $property) {\n      @return #{$prefix}-#{$property};\n    } @else {\n      @return $property;\n    }\n  }\n}\n\n// Checks if the value given is a unit of time.\n@function is-time($value) {\n  @if type-of($value) == number {\n    @return not(not(index(s ms, unit($value))));\n  } @else {\n    @return false;\n  }\n}\n","// Credit: http://tobiasahlin.com/spinkit/\n\n.loader {\n\n  &.hide {\n    display: none;\n  }\n\n  .spinner {\n    margin: 10px auto 10px auto;\n    width: 70px;\n    text-align: center;\n  }\n\n  .spinner > div {\n    width: 18px;\n    height: 18px;\n    background-color: #333;\n\n    border-radius: 100%;\n    display: inline-block;\n    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n    animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  }\n\n  .spinner .bounce1 {\n    -webkit-animation-delay: -0.32s;\n    animation-delay: -0.32s;\n  }\n\n  .spinner .bounce2 {\n    -webkit-animation-delay: -0.16s;\n    animation-delay: -0.16s;\n  }\n\n  @-webkit-keyframes sk-bouncedelay {\n    0%, 80%, 100% { -webkit-transform: scale(0) }\n    40% { -webkit-transform: scale(1.0) }\n  }\n\n  @keyframes sk-bouncedelay {\n    0%, 80%, 100% { \n      -webkit-transform: scale(0);\n      transform: scale(0);\n    }\n\n    40% { \n    -webkit-transform: scale(1.0);\n      transform: scale(1.0);\n    }\n  }\n}",".borough-button {\n\t@include transition(all .3s);\n\n\tbackground: $primary-color-dark;\n\tcolor: $primary-color-text;\n\tcursor: pointer;\n\tfont-family: $font-family-primary;\n\tmargin: 5px;\n\tpadding: 10px 0;\n\ttext-align: center;\n\twidth: 110px;\n\n\tbox-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n\n\t&:hover, &.highlight {\n\t\tbackground: $primary-color;\n\t    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);\n\t}\n}",".court-container {\n\n\tbox-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);\n\tcolor: $primary-text-color;\n\tfont-family: $font-family-primary;\n\tmargin: 20px 0px;\n\n\t.image-container {\n\t\theight: 200px;\n\t\twidth: 300px;\n\n\t\timg {\n\t\t\tdisplay: block;\n\t\t}\n\t}\n\n\t.content-container {\n\t\theight: 80px;\n\t\tposition: relative;\n\t\twidth: 300px;\n\n\t\th2 {\n\t\t\tfont-size: 16px;\n\t\t\tmargin: 10px 0px 10px 10px;\n\t\t}\n\n\t\th3 {\n\t\t\tfont-size: 12px;\n\t\t\tmargin: 0px 0px 10px 10px;\n\t\t}\n\n\t\ta {\n\t\t\tcolor: $link-color;\n\t\t\tcursor: pointer;\n\t\t\tfont-size: 14px;\n\t\t\tmargin: 0px 0px 10px 10px;\n\t\t}\n\n\t\t.favorite {\n\t\t\tbottom: 10px;\n\t\t\tcolor: #dd2e44;\n\t\t\tcursor: pointer ;\n\t\t\tposition: absolute;\n\t\t\tright: 10px;\n\t\t}\n\t}\n}"],"sourceRoot":"webpack://"}]);
 
 	// exports
 
@@ -24979,6 +24979,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var HIGHLIGHT_HEIGHT = 75;
+	var COURTS_PER_PAGE = 20;
+
 	var Home = (function (_React$Component) {
 		_inherits(Home, _React$Component);
 
@@ -24991,7 +24994,9 @@
 				borough: 'Manhattan',
 				page: 1,
 				courts: [],
-				loading: true
+				loading: true,
+				highlightNav: false,
+				hasMoreCourtsInBorough: true
 			};
 			return _this;
 		}
@@ -24999,8 +25004,13 @@
 		_createClass(Home, [{
 			key: 'componentWillMount',
 			value: function componentWillMount() {
+				window.addEventListener('scroll', onScroll.bind(this));
 				fetchCourts.call(this, this.state);
-				var self = this;
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				window.addEventListener('scroll', onScroll);
 			}
 		}, {
 			key: 'componentWillUpdate',
@@ -25031,7 +25041,9 @@
 					this.setState({
 						borough: name,
 						courts: [],
-						loading: true
+						loading: true,
+						page: 1,
+						hasMoreCourtsInBorough: true
 					});
 				}
 			}
@@ -25041,7 +25053,7 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'home-container' },
-					_react2.default.createElement(_NavBar2.default, { highlightHeight: 35 }),
+					_react2.default.createElement(_NavBar2.default, { highlight: this.state.highlightNav, borough: this.state.borough }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'borough-container' },
@@ -25060,19 +25072,41 @@
 		return Home;
 	})(_react2.default.Component);
 
-	exports.default = Home;
+	/* 
+	 * Helpers
+	 */
 
+	exports.default = Home;
 	function fetchCourts(state) {
 		var _this2 = this;
 
 		_CourtsApi2.default.getCourts(state.borough, state.page).then(function (data) {
 			_this2.setState({
 				courts: _this2.state.courts.concat(data),
-				loading: false
+				loading: false,
+				hasMoreCourtsInBorough: data.length === COURTS_PER_PAGE
 			});
 		}).catch(function (err) {
 			console.log(err);
 		});
+	}
+
+	function onScroll() {
+		// this code isn't DRY but prevents react DOM diffing unnecessarily
+		if (window.scrollY > HIGHLIGHT_HEIGHT) {
+			this.setState({ highlightNav: true });
+		} else {
+			this.setState({ highlightNav: false });
+		}
+
+		if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+			if (!this.state.loading && this.state.hasMoreCourtsInBorough) {
+				this.setState({
+					page: this.state.page + 1,
+					loading: true
+				});
+			}
+		}
 	}
 
 /***/ },
@@ -25102,29 +25136,16 @@
 	var NavBar = (function (_React$Component) {
 		_inherits(NavBar, _React$Component);
 
-		function NavBar(props) {
+		function NavBar() {
 			_classCallCheck(this, NavBar);
 
-			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(NavBar).call(this, props));
-
-			_this.state = {};
-			return _this;
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(NavBar).apply(this, arguments));
 		}
 
 		_createClass(NavBar, [{
-			key: 'componentWillMount',
-			value: function componentWillMount() {
-				window.addEventListener('scroll', onScroll.bind(this));
-			}
-		}, {
-			key: 'componentWillUnmount',
-			value: function componentWillUnmount() {
-				window.addEventListener('scroll', onScroll);
-			}
-		}, {
 			key: 'render',
 			value: function render() {
-				var className = 'nav-bar-wrapper' + (this.state.highlight ? ' highlight' : '');
+				var className = 'nav-bar-wrapper' + (this.props.highlight ? ' highlight' : '');
 
 				return _react2.default.createElement(
 					'div',
@@ -25136,6 +25157,11 @@
 							'a',
 							{ href: '/' },
 							'BallerNYC'
+						),
+						_react2.default.createElement(
+							'span',
+							null,
+							this.props.borough
 						)
 					),
 					_react2.default.createElement('div', null)
@@ -25146,19 +25172,7 @@
 		return NavBar;
 	})(_react2.default.Component);
 
-	/*
-	 * Helpers
-	 */
-
 	exports.default = NavBar;
-	function onScroll() {
-		// this code isn't DRY but prevents react DOM diffing unnecessarily
-		if (window.scrollY > this.props.highlightHeight) {
-			this.setState({ highlight: true });
-		} else {
-			this.setState({ highlight: false });
-		}
-	}
 
 /***/ },
 /* 216 */
@@ -25270,7 +25284,11 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'court-container' },
-					_react2.default.createElement('img', { src: this.buildImageSrc() }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'image-container' },
+						_react2.default.createElement('img', { src: this.buildImageSrc() })
+					),
 					_react2.default.createElement(
 						'div',
 						{ className: 'content-container' },
@@ -25278,6 +25296,21 @@
 							'h2',
 							null,
 							this.props.data.name
+						),
+						_react2.default.createElement(
+							'h3',
+							null,
+							this.props.data.location
+						),
+						_react2.default.createElement(
+							'a',
+							null,
+							'View Map'
+						),
+						_react2.default.createElement(
+							'i',
+							{ className: 'material-icons favorite' },
+							'favorite_border'
 						)
 					)
 				);
@@ -25309,7 +25342,8 @@
 	    }
 	  },
 	  api: {
-	    baseUrl: '/api'
+	    baseUrl: 'http://localhost:8080'
+	    // baseUrl: '/api'
 	  },
 	  courts: {
 	    boroughs: ['Manhattan', 'Brooklyn', 'Bronx', 'Queens', 'Staten Island'],
