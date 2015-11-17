@@ -1,6 +1,7 @@
 'use strict';
 
 import config from '../utils/config';
+require('whatwg-fetch');
 
 function formatQuery (obj) {
   return Object.keys(obj)
