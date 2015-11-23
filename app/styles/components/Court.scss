@@ -1,9 +1,31 @@
 .court-container {
-
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+	// box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 	color: $primary-text-color;
 	font-family: $font-family-primary;
 	margin: 20px 0px;
+	perspective: 800px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+
+	.frontface {
+		backface-visibility: hidden;
+	}
+
+	.backface {
+		backface-visibility: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background: #fff;
+		transform: rotateY(180deg);
+	}
+
+	&.flipped {
+		transform: rotateY(180deg);
+	}
 
 	.image-container {
 		height: 200px;
@@ -18,6 +40,7 @@
 		height: 80px;
 		position: relative;
 		width: 300px;
+		background: #fff;
 
 		h2 {
 			font-size: 16px;

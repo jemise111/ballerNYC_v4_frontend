@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import SearchBar from './SearchBar';
 
 export default class NavBar extends React.Component {
 
@@ -11,9 +12,10 @@ export default class NavBar extends React.Component {
 			<div className={className}>
 				<nav>
 					<a href="/">BallerNYC</a>
-					<span>{this.props.borough}</span>			
+					<span>{this.props.borough}</span>
+					<SearchBar />
 				</nav>
-				<div/>
+				<div className="spacer"/>
 			</div>
 		);
 	}

@@ -35,5 +35,10 @@ module.exports = {
 				loaders: ['style', 'css?sourceMap','sass?sourceMap']
 			}
 		]
+	},
+
+	devServer: {
+		port: "8085"
 	}
+
 }

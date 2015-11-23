@@ -1,0 +1,59 @@
+.search-bar-container {
+	float: right;
+	position: relative;
+
+	.circle {
+		cursor: pointer;
+		border: 2px solid $primary-color-text;
+		height: 15px;
+		width: 15px;
+		border-radius: 15px;
+		margin: 14px 40px 0px 0px;
+		transition: all .7s cubic-bezier(0.27, 0.72, 0.46, 1.06) .3s;
+	}
+
+	.line {
+		position: absolute;
+		bottom: -4px;
+		right: 40px;
+		height: 7px;
+		border-right: 2px solid $primary-color-text;
+		transform: rotate(-45deg);
+		transition: all .5s cubic-bezier(1,-2, 0.12, 1.53);
+	}
+
+	input {
+		transition: all .1s linear .8s;
+
+	    border: none;
+		cursor: pointer;
+	    font-size: 14px;
+	    line-height: 100%;
+	    height: 100%;
+	    outline: 0;
+	    opacity: 0;
+	    padding-left: 6px;
+	    width: calc(100% - 6px);
+	}
+
+	&.expand {
+		.circle {
+			border-radius: 0px;
+			height: 25px;
+			margin-right: 20px;
+			margin-top: 10px;
+			width: 200px;
+		}
+
+		.line {
+			bottom: 1px;
+			height: 0px;
+			right: 44px;
+		}
+
+		input {
+			cursor: text;
+			opacity: 1;
+		}
+	}
+}

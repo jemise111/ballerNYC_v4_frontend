@@ -1,11 +1,12 @@
 .nav-bar-wrapper {
 	nav {
 		@include transition(all .3s);
-		
-		background-color: #fff;
+
+		background-color: $primary-color-dark;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 		font-family: $font-family-primary;
-		height: 60px;
-		margin-bottom: 60px;
+		height: 50px;
+		margin-bottom: 50px;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
@@ -14,11 +15,11 @@
 		a {
 			@include transition(all .3s);
 
-			color: $primary-color-dark;
-			font: 24px Helvetica;
+			color: $primary-color-text;
+			font: 24px $font-family-primary;
 			display: inline-block;
-			margin-left: 30px;
-			margin-top: 15px;
+			margin-left: 15px;
+			margin-top: 10px;
 			text-decoration: none;
 		}
 
@@ -33,31 +34,13 @@
 		}
 	}
 
-	div {
-		@include transition(all .3s);
-		height: 60px;
+	.spacer {
+		height: 50px;
 	}
 
 	&.highlight {
-		nav {
-			background-color: $primary-color-dark;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-			border: none;
-			height: 50px;
-		}
-
-		a {
-			color: $primary-color-text;
-			margin-left: 15px;
-			margin-top: 10px;
-		}
-
 		span {
 			top: 0px;
-		}
-
-		div {
-			height: 50px;
 		}
 	}
 }
