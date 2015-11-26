@@ -62,6 +62,7 @@ export default class Home extends React.Component {
 	onBoroughPress(name) {
 		if (name !== this.state.borough) {
 			this.setState({
+				address: '',
 				borough: name,
 				courts: [],
 				loading: true,

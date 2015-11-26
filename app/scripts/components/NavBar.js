@@ -11,9 +11,17 @@ export default class NavBar extends React.Component {
 		return (
 			<div className={className}>
 				<nav>
-					<a href="/">BallerNYC</a>
-					<span>{this.props.borough}</span>
-					<SearchBar onSearch={this.props.onSearch} />
+					<a className="link-wrapper" href="/">
+						<span className="text">
+							BallerNYC
+							<span className="borough">{this.props.borough}</span>
+						</span>
+						<img className="logo" src="app/images/logo.png"></img>
+					</a>
+					<SearchBar
+						onSearch={this.props.onSearch}
+						showPlaceholder={!!this.props.borough.length}
+					/>
 				</nav>
 				<div className="spacer"/>
 			</div>

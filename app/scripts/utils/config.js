@@ -1,5 +1,5 @@
 export default {
-  map: {
+  staticMap: {
     baseUrl: 'https://maps.googleapis.com/maps/api/staticmap',
     params: {
       key: 'AIzaSyCs-xgVqfOSufY5xeRhXmgtQPp3EDCAgUU',
@@ -7,7 +7,10 @@ export default {
       maptype: 'hybrid',
       zoom: '18'
     }
-  },  
+  },
+  googleMap: {
+    baseUrl: 'http://maps.google.com/maps/?q='
+  }, 
   api: {
     baseUrl: 'http://localhost:8080'
     // baseUrl: '/api'

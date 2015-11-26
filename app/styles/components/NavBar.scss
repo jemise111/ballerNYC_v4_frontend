@@ -6,31 +6,54 @@
 		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 		font-family: $font-family-primary;
 		height: 50px;
-		margin-bottom: 50px;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
 		z-index: 1;
 
-		a {
-			@include transition(all .3s);
-
-			color: $primary-color-text;
-			font: 24px $font-family-primary;
+		.link-wrapper {
 			display: inline-block;
-			margin-left: 15px;
-			margin-top: 10px;
+			margin: 10px 0px 0px 20px;
 			text-decoration: none;
-		}
 
-		span {
-			@include transition(top .15s ease-out .3s);
+			.text {
+				display: none;
+				color: $primary-color-text;
+				font: 24px $font-family-primary;
+				display: none;
+				text-decoration: none;
 
-			color: #fff;
-			font-size: 12px;
-			position: relative;
-			top: 32px;
-			left: 10px;
+				@media (min-width: $ipad) {
+					display: inline-block;	
+				}
+
+				.borough {
+					@include transition(top .15s ease-out);
+
+					color: $primary-color-text;
+					display: none;
+					font-size: 12px;
+					position: relative;
+					top: 32px;
+					left: 10px;
+
+					@media (min-width: $ipad) {
+						display: inline-block;	
+					}
+				}
+			}
+
+			.logo {
+				width: 30px;
+
+				@media (min-width: $ipad) {
+					display: none;	
+				}
+			}
+
+			@media (min-width: $ipad) {
+				margin: 10px 0 0 40px;
+			}
 		}
 	}
 
@@ -39,7 +62,7 @@
 	}
 
 	&.highlight {
-		span {
+		.link-wrapper .text .borough{
 			top: 0px;
 		}
 	}

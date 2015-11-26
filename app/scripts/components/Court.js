@@ -12,12 +12,20 @@ export default class Court extends React.Component {
 
 	buildImageSrc() {
 		var params = [];
-	    for (var k in config.map.params) {
-	      params.push(k + '=' + config.map.params[k]);
+	    for (var k in config.staticMap.params) {
+	      params.push(`${k}=${config.staticMap.params[k]}`);
 	    }
-	    params.push('center=' + this.props.data.lat + ',' + this.props.data.lon);
+	    params.push(`center=${this.props.data.lat},${this.props.data.lon}`);
 	    return 'https://placekitten.com/g/300/200';
-		// return config.map.baseUrl + '?' + params.join('&');
+		// return config.staticMap.baseUrl + '?' + params.join('&');
+	}
+
+	openGoogleMap() {
+		window.open(`${config.googleMap.baseUrl}${this.props.data.lat},${this.props.data.lon}`, '_blank');
+	}
+
+	favorite() {
+		console.log('favorite court', this.props.data.name);
 	}
 
 	flip() {
@@ -36,8 +44,15 @@ export default class Court extends React.Component {
 					<div className="content-container">
 						<h2>{this.props.data.name}</h2>
 						<h3>{this.props.data.location}</h3>
-						<a onClick={this.flip.bind(this)}>View Map</a>
-						<i className="material-icons favorite">favorite_border</i>
+						<a onClick={this.flip.bind(this)}>Sign up</a>
+						<i 
+							onClick={this.openGoogleMap.bind(this)}
+							className="material-icons map-icon"
+						>place</i>
+						<i
+							onClick={this.favorite.bind(this)}
+							className="material-icons favorite-icon"
+						>favorite</i>
 					</div>
 				</div>
 				<div className="backface">

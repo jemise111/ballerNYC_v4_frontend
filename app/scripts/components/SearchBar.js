@@ -9,21 +9,25 @@ export default class SearchBar extends React.Component {
 		this.state = {};
 	}
 
-	expand() {
-		this.setState({expand: true});
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.showPlaceholder) {
+			this.refs.searchInput.value = '';
+		}
+	}
+
+	handleIconClick() {
+		if (!this.state.expand) {
+			this.setState({expand: true});
+			this.refs.searchInput.focus();
+		} else {
+			this.props.onSearch(this.state.inputText);
+		}
 	}
 
 	handleInputChange(e) {
 		this.setState({
 			inputText: e.target.value
-		})
-	}
-
-	onSearchSubmit(e) {
-		e.preventDefault();
-		if (this.state.inputText && this.state.inputText.length) {
-			this.props.onSearch(this.state.inputText);
-		}
+		});
 	}
 
 	handleEnter(e) {
@@ -35,15 +39,20 @@ export default class SearchBar extends React.Component {
 	render() {
 		const className = 'search-bar-container ' + (this.state.expand ? 'expand' : '');
 		return (
-			<div onClick={this.expand.bind(this)} className={className}>
-				<div className="circle">
-					<input
-						onChange={this.handleInputChange.bind(this)}
-						onKeyPress={this.handleEnter.bind(this)}
-						placeholder="Enter an address"
-					/>
-				</div>
+			<div className={className}>
+				<i
+					className="material-icons search-icon"
+					onClick={this.handleIconClick.bind(this)}
+				>
+					search
+				</i>
 				<div className="line"></div>
+				<input
+					onChange={this.handleInputChange.bind(this)}
+					onKeyPress={this.handleEnter.bind(this)}
+					placeholder="Enter an address"
+					ref="searchInput"
+				/>
 			</div>
 
 		);

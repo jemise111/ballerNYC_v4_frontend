@@ -1,6 +1,7 @@
 /* THERE IS NO WEBPACK COMPASS LOADER SO WE ARE FORCED TO MANUALLY INCLUDE COMPASS MIXINS */
 @import "../../node_modules/compass-mixins/lib/compass";
 @import "../../node_modules/compass-mixins/lib/compass/css3/_transition.scss";
+@import "../../node_modules/compass-mixins/lib/animation/_core.scss";
 
 /* CUSTOM IMPORTS */
 @import './base.scss';
