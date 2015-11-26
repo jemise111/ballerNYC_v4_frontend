@@ -35,8 +35,14 @@ export default class Home extends React.Component {
 	}
 
 	componentWillUpdate(nextProps, nextState) {
-		if (nextState.page > this.state.page || nextState.borough != this.state.borough) {
-			fetchCourts.call(this, nextState);
+		if (nextState.borough && nextState.borough.length) {
+			if (nextState.page > this.state.page || nextState.borough !== this.state.borough) {
+				fetchCourts.call(this, nextState);
+			}
+		} else if (nextState.address && nextState.address.length) {
+			if (nextState.address !== this.state.address) {
+				searchCourts.call(this, nextState.address)
+			}
 		}
 	}
 
@@ -65,10 +71,25 @@ export default class Home extends React.Component {
 		}
 	}
 
+	onSearch(address) {
+		this.setState({
+			address,
+			borough: '',
+			courts: [],
+			loading: true,
+			page: 1,
+			hasMoreCourtsInBorough: false
+		});
+	}
+
 	render() {
 		return (
 			<div className="home-container">
-				<NavBar highlight={this.state.highlightNav} borough={this.state.borough} />
+				<NavBar
+					highlight={this.state.highlightNav}
+					borough={this.state.borough}
+					onSearch={this.onSearch.bind(this)}
+				/>
 				<div className="borough-container">
 					{config.courts.boroughs.map(this.getBorough.bind(this))}
 				</div>
@@ -93,6 +114,17 @@ function fetchCourts(state) {
 			courts: this.state.courts.concat(data),
 			loading: false,
 			hasMoreCourtsInBorough: data.length === COURTS_PER_PAGE
+		});
+	})
+	.catch((err) => {console.log(err)})
+}
+
+function searchCourts(address) {
+	CourtsApi.searchCourts(address)
+	.then((data) => {
+		this.setState({
+			courts: data,
+			loading: false
 		});
 	})
 	.catch((err) => {console.log(err)})

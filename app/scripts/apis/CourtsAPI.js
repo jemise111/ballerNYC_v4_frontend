@@ -13,11 +13,21 @@ export default class CourtsAPI extends BaseAPI {
       query.skip = config.courts.pageSize * (page-1);
     }
 
-    return this.fetch ({
+    return this.fetch({
       url: '/courts',
       method: 'GET',
       query
     });
+  }
+
+  static searchCourts(address) {
+    return this.fetch({
+      url: '/search',
+      method: 'GET',
+      query: {
+        address
+      }
+    }); 
   }
 
 }

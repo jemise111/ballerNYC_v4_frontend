@@ -13,7 +13,7 @@ export default class NavBar extends React.Component {
 				<nav>
 					<a href="/">BallerNYC</a>
 					<span>{this.props.borough}</span>
-					<SearchBar />
+					<SearchBar onSearch={this.props.onSearch} />
 				</nav>
 				<div className="spacer"/>
 			</div>
