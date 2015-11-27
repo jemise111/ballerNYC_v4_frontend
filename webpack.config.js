@@ -33,6 +33,10 @@ module.exports = {
 				test: /\.scss$/,
 				// loader: "style-loader!raw-loader!sass-loader?includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib")
 				loaders: ['style', 'css?sourceMap','sass?sourceMap']
+			},
+			{
+				test: /\.(png|jpg)$/,
+				loader: 'url-loader?limit=100000'
 			}
 		]
 	},

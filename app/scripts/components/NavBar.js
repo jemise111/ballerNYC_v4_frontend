@@ -16,7 +16,7 @@ export default class NavBar extends React.Component {
 							BallerNYC
 							<span className="borough">{this.props.borough}</span>
 						</span>
-						<img className="logo" src="app/images/logo.png"></img>
+						<img className="logo" src={require('../../images/logo.png')}></img>
 					</a>
 					<SearchBar
 						onSearch={this.props.onSearch}
