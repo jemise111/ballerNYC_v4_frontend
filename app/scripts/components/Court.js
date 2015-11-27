@@ -16,8 +16,8 @@ export default class Court extends React.Component {
 	      params.push(`${k}=${config.staticMap.params[k]}`);
 	    }
 	    params.push(`center=${this.props.data.lat},${this.props.data.lon}`);
-	    return 'https://placekitten.com/g/300/200';
-		// return config.staticMap.baseUrl + '?' + params.join('&');
+	    // return 'https://placekitten.com/g/300/200';
+		return `${config.staticMap.baseUrl}?${params.join('&')}`;
 	}
 
 	openGoogleMap() {
