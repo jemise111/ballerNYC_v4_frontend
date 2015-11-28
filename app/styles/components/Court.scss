@@ -9,20 +9,20 @@
 	transition: transform 1s;
 
 	.frontface {
-		backface-visibility: hidden;
+		@include backface-visibility(hidden);
 		position: relative;
 		z-index: 1;
 	}
 
 	.backface {
-		backface-visibility: hidden;
+		@include backface-visibility(hidden);
 		background: #fff;
 		@include box-sizing(border-box);
 		height: 100%;
 		padding: 10px;
 		position: absolute;
 		top: 0;
-		transform: rotateY(180deg);
+		@include transform(rotateY(180deg));
 		width: 100%;
 		z-index: 2;
 
@@ -32,7 +32,7 @@
 	}
 
 	&.flipped {
-		transform: rotateY(180deg);
+		@include transform(rotateY(180deg));
 	}
 
 	.image-container {
