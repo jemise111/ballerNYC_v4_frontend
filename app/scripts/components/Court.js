@@ -2,6 +2,7 @@
 
 import React from 'react';
 import config from '../utils/config';
+import SignUpForm from './SignUpForm';
 
 export default class Court extends React.Component {
 
@@ -20,16 +21,17 @@ export default class Court extends React.Component {
 		return `${config.staticMap.baseUrl}?${params.join('&')}`;
 	}
 
-	openGoogleMap() {
-		window.open(`${config.googleMap.baseUrl}${this.props.data.lat},${this.props.data.lon}`, '_blank');
-	}
-
 	favorite() {
 		console.log('favorite court', this.props.data.name);
 	}
 
 	flip() {
 		this.setState({flip: !this.state.flip});
+	}
+
+	onSubmitForm(data) {
+		this.props.onSignUp(data); // should be a promise that resolves... and then...
+		this.flip();
 	}
 
 	render() {
@@ -45,10 +47,12 @@ export default class Court extends React.Component {
 						<h2>{this.props.data.name}</h2>
 						<h3>{this.props.data.location}</h3>
 						<a onClick={this.flip.bind(this)}>Sign up</a>
-						<i 
-							onClick={this.openGoogleMap.bind(this)}
-							className="material-icons map-icon"
-						>place</i>
+						<a
+							href={`${config.googleMap.baseUrl}${this.props.data.lat},${this.props.data.lon}`}
+							target="_blank"
+						>
+							<i className="material-icons map-icon">place</i>
+						</a>
 						<i
 							onClick={this.favorite.bind(this)}
 							className="material-icons favorite-icon"
@@ -56,7 +60,11 @@ export default class Court extends React.Component {
 					</div>
 				</div>
 				<div className="backface">
-					<h1>Im the back</h1>
+					<i
+						onClick={this.flip.bind(this)}
+						className="material-icons close-icon"
+					>close</i>
+					<SignUpForm onSignUp={this.onSubmitForm.bind(this)}/>
 				</div>
 			</div>
 		);

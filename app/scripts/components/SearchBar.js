@@ -48,6 +48,7 @@ export default class SearchBar extends React.Component {
 				</i>
 				<div className="line"></div>
 				<input
+					type="text"
 					onChange={this.handleInputChange.bind(this)}
 					onKeyPress={this.handleEnter.bind(this)}
 					placeholder="Enter an address"

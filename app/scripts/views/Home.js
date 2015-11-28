@@ -47,7 +47,7 @@ export default class Home extends React.Component {
 	}
 
 	getCourt(data, id) {
-		return <Court data={data} key={id} />
+		return <Court data={data} key={id} onSignUp={this.onSignUp.bind(this)} />
 	}
 
 	getBorough(data, id) {
@@ -57,6 +57,10 @@ export default class Home extends React.Component {
 					onClick={this.onBoroughPress.bind(this, data)}
 					highlight={this.state.borough === data}
 				/>
+	}
+
+	onSignUp(data) {
+		console.log(data);
 	}
 
 	onBoroughPress(name) {
@@ -95,7 +99,7 @@ export default class Home extends React.Component {
 					{config.courts.boroughs.map(this.getBorough.bind(this))}
 				</div>
 				<div className="courts-container">
-					{this.state.courts.map(this.getCourt)}
+					{this.state.courts.map(this.getCourt.bind(this))}
 				</div>
 				<Loader hide={!this.state.loading}/>
 			</div>
